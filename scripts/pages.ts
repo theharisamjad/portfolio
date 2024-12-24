@@ -1,4 +1,6 @@
-const ghpages = require("gh-pages");
+import * as ghpages from 'gh-pages';
+import * as path from 'path';
+
 const build_path = './out';
 
 const args = process.argv.slice(2);
@@ -26,7 +28,7 @@ ghpages.publish(
     repo: repoURL,
     dotfiles: true,
   },
-  (err) => {
+  (err: Error | null) => {
     if (err) console.error("ERROR: ", err);
     else console.log("PUBLISHED via gh-pages");
   }

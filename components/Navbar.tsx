@@ -1,7 +1,13 @@
+"use client";
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link'
 
-export const Nav = ({ title, links }) => {
+interface NavProps {
+  title: string;
+  links: { link: string; title: string }[];
+}
+
+export const Nav: React.FC<NavProps> = ({ title, links }) => {
 
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
@@ -12,9 +18,9 @@ export const Nav = ({ title, links }) => {
       <div className="container">
         <Link href="/">
           {/* <Image src={Logo} alt="Logo" width="36" height="36" className="vertical-align-middle" /> */}
-          <a className="navbar-brand">
+          <div className="navbar-brand">
             <span className="">{title}</span>
-          </a>
+          </div>
         </Link>
         <button
           className="custom-toggler navbar-toggler"
@@ -35,7 +41,7 @@ export const Nav = ({ title, links }) => {
           <div className="navbar-nav">
             {links.map((value, index) => (
               <Link key={index} href={value.link} >
-                <a className="nav-link">{value.title}</a>
+                <div className="nav-link">{value.title}</div>
               </Link>
             ))}
           </div>
