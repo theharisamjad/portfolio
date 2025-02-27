@@ -39,7 +39,7 @@ export const intro = {
     },
     {
       title: "Resume",
-      link: "/resume-haris-amjad.pdf",
+      link: "/Resume-Haris-Amjad.pdf",
       isPrimary: false,
     },
   ],
