@@ -207,7 +207,7 @@ export const links = {
   cards: [
     {
       title: "My website",
-      link: "https://harisamjad.com/",
+      link: "https://portfolio-haris-0525s-projects.vercel.app/",
     },
     {
       title: "My GitHub",
