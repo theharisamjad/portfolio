@@ -1,10 +1,13 @@
-
-import profile from './profile.png';
-import { faAppStore, faGithub, faGooglePlay } from '@fortawesome/free-brands-svg-icons';
-import { } from '@fortawesome/free-solid-svg-icons';
+import profile from "./profile.png";
+import {
+  faAppStore,
+  faGithub,
+  faGooglePlay,
+} from "@fortawesome/free-brands-svg-icons";
+import {} from "@fortawesome/free-solid-svg-icons";
 
 export const navigation = {
-  name: "Hashir",
+  name: "Haris",
   links: [
     {
       title: "About",
@@ -22,15 +25,11 @@ export const navigation = {
       title: "Links",
       link: "/links",
     },
-    {
-      title: "Blog",
-      link: "https://medium.com/@hashirshoaeb",
-    }
   ],
-}
+};
 export const intro = {
-  title: "Hey, I'm Hashir",
-  description: "A Computer Engineer creating mobile apps and static websites.",
+  title: "Hey, I'm Haris",
+  description: "A Software Engineer creating cool mobile apps.",
   image: profile.src,
   buttons: [
     {
@@ -40,130 +39,183 @@ export const intro = {
     },
     {
       title: "Resume",
-      link: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+      link: "/resume-haris-amjad.pdf",
       isPrimary: false,
     },
   ],
-}
+};
 
 export const about = {
   title: "Who I am",
   description: [
-    "I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering. I kick started my professional career as a mobile application developer working remotely for a UK based startup — Lessgo.",
-    "The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. I opensource my code from a place of empathy - for future developers, teammates, users, and with accessibility in mind. I also love joining communities, helping and mentoring new developers, and supporting organizations to promote diversity in tech. I’m sharing my programming journey on instagram, helping people who are just getting into the space of programming.",
-    "When I’m not programming, I focus on my hobbies which are: diary writing, doodling, meeting people and growing my network.",
+    "I'm a software engineer who started his career in 2018 as junior application developer, after spending more than 7 years in the industry, I now specialize in cross-platform mobile development with Meta's React Native, i love to create user-centric applications that are picture perfect and easy to use.",
+    "The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. Personally i like to build side projects that I opensource from a place of empathy - for future developers, and users..",
+    "When I’m not programming, I focus on my hobbies which are: playing football, video games, meeting people and growing my network.",
   ],
-}
+};
 
 export const work = {
   title: "What I do",
   cards: [
     {
       title: "Mobile App Development",
-      description: "I create pixel perfect iOS and Andriod apps using Flutter.",
+      description:
+        "I create pixel perfect iOS and Andriod apps using React Native/Expo or Xamarin/MAUI.",
       icons: null,
     },
-    {
-      title: "Web Development",
-      description: "I create responsive static websites using Reactjs.",
-      icons: null,
-    }
   ],
-}
+};
 
 export const projects = {
   title: "Projects",
   cards: [
     {
-      title: "StarBook",
-      description: "A digital diary and mood tracking app that helps you in keeping track of your mood and productivity throughout the month/year.",
+      title: "Fasset Mobile App",
+      description:
+        "A fintech app that focuses on digital asset investment and tokenized real-world assets, giving opportunity for users to invest in stocks and cryptocurrencies.",
+      tags: ["Javascript", "React Native", "Redux", "Jest"],
       icons: [
         {
           icon: faAppStore,
-          link: "https://apps.apple.com/us/app/starbook-journal-ai-diary/id1552418289",
-        },
-        {
-          icon: faGithub,
-          link: "https://github.com/hashirshoaeb/star_book",
-        },
-      ]
-    },
-    {
-      title: "QuranTalk",
-      description: "An emotional well being and mental health app. The app helps people to navigate their emotions in the light of the Quran.",
-      icons: [
-        {
-          icon: faAppStore,
-          link: "https://apps.apple.com/us/app/qurantalk/id1563425149",
+          link: "https://apps.apple.com/us/app/fasset-buy-digital-assets/id1599893605",
         },
         {
           icon: faGooglePlay,
-          link: "https://play.google.com/store/apps/details?id=com.ayahemotion.quran_talk",
+          link: "https://play.google.com/store/apps/details?id=com.fasset.cashapp",
         },
-      ]
+      ],
     },
     {
-      title: "Portfolio",
-      description: "A portfolio website template that helps you showcase your work, projects and skills as a software developer or freelancer.",
+      title: "Graana.com Mobile App",
+      description:
+        "A real estate app that helps users to buy/rent or sell their properties online within a few clicks in secured and transparent manner.",
+      tags: ["TypeScript", "React Native", "Redux", "React-native-maps"],
+      icons: [
+        {
+          icon: faAppStore,
+          link: "https://apps.apple.com/pk/app/graana-real-estate-portal/id1438849353",
+        },
+        {
+          icon: faGooglePlay,
+          link: "https://play.google.com/store/apps/details?id=com.graanaapp&hl=en&pli=1",
+        },
+      ],
+    },
+    {
+      title: "WorksApp",
+      description:
+        "A real estate lead management app that streamlines property transactions with lead tracking, client management, deal monitoring, and management of day-to-day tasks.",
+      tags: ["JavaScript", "React Native", "React-navigation", "Axios"],
+      icons: [
+        {
+          icon: faGooglePlay,
+          link: "https://play.google.com/store/apps/details?id=com.graana.worksapp&hl=en",
+        },
+      ],
+    },
+
+    {
+      title: "Weather World",
+      description:
+        "A simple mobile application that fetches weather data dynamically by city search in real time and shows weather forecast for next 3 days.",
+      tags: [
+        "TypeScript",
+        "Expo",
+        "Redux/toolkit",
+        "React-native-paper",
+        "Eas",
+      ],
       icons: [
         {
           icon: faGithub,
-          link: "https://github.com/hashirshoaeb/portfolio",
+          link: "https://github.com/haris-0525/WeatherWorld",
         },
-      ]
+      ],
+    },
+
+    {
+      title: "Note IT",
+      description:
+        "A Note application developed in React Native/Expo which users can use to jolt down their notes and day-to-day tasks.",
+      tags: ["TypeScript", "Expo", "Zustand", "Async-storage", "Eas"],
+      icons: [
+        {
+          icon: faGithub,
+          link: "https://github.com/haris-0525/TodoApp",
+        },
+      ],
     },
   ],
-}
+};
+
+export const skills = [
+  "JavaScript",
+  "TypeScript",
+  "C#",
+  "Java",
+  "HTML",
+  "CSS",
+  "React",
+  "React Native",
+  "Expo",
+  "Xamarin",
+  ".NET MAUI",
+  "Android",
+  "iOS",
+  "Redux",
+  "Zustand",
+  "Jest",
+  "AWS",
+  "React Query",
+  "Firebase",
+  "Github",
+  "Bolt",
+  "SQL",
+  "MongoDB",
+  "Node.js",
+  "Express.js",
+  "Xcode",
+  "Android Studio",
+];
 
 export const contact = {
   title: "Get in touch",
-  description: "Coffee Chat! Please do not hesitate to schedule a meeting. Alternatively, feel free to reach out directly by email at hashirshoaeb@gmail.com.",
+  description:
+    "Please do not hesitate to reach out directly by email at harisamjad0525@gmail.com or drop a text at +923336610199",
   buttons: [
     {
       title: "Email Me",
-      link: "mailto:hashirshoaeb@gmail.com",
+      link: "mailto:harisamjad0525@gmail.com",
       isPrimary: true,
     },
-    {
-      title: "Schedule Meeting",
-      link: "https://topmate.io/hashirshoaeb",
-      isPrimary: false,
-    },
-  ]
-}
+  ],
+};
 
-// SEARCH ENGINE 
+// SEARCH ENGINE
 export const SEO = {
-  // 50 - 60 char  
-  title: "Hashir Shoaib | Computer Engineer | Flutter | Reactjs developer",
-  description: "I create mobile apps and static websites. I graduated from National University of Sciences and Technology (NUST) in 2020 with a degree in Computer Engineering.",
+  // 50 - 60 char
+  title: "Haris Amjad | Software Engineer | React Native | .NET MAUI developer",
+  description:
+    "I create mobile apps. I did masters from National University of Sciences and Technology (NUST) in 2024 with a degree in Software Engineering.",
   image: profile.src,
-}
+};
 
 export const links = {
   image: profile.src,
-  title: "@hashirshoaeb",
-  description: "Computer Engineer | Flutter | Reactjs Developer",
+  title: "@harisamjad",
+  description: "Senior Software Engineer | React Native | Xamarin Developer",
   cards: [
     {
       title: "My website",
-      link: "https://hashirshoaeb.com/",
-    },
-    {
-      title: "QuranTalk App",
-      link: "https://www.qurantalk.app/",
-    },
-    {
-      title: "StarBook App",
-      link: "https://starbook.dev/",
+      link: "https://harisamjad.com/",
     },
     {
       title: "My GitHub",
-      link: "https://github.com/hashirshoaeb/",
+      link: "https://github.com/haris-0525",
     },
     {
       title: "My LinkedIn",
-      link: "https://www.linkedin.com/in/hashirshoaeb/",
+      link: "https://www.linkedin.com/in/haris-amjad-71b5a3117/",
     },
-  ]
-}
+  ],
+};

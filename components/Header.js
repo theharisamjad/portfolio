@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from "next/head";
 
 export const Header = ({ seo }) => {
   return (
@@ -10,5 +10,5 @@ export const Header = ({ seo }) => {
       <meta property="og:image" content={seo.image} />
       <meta property="og:type" content="website" />
     </Head>
-  )
-}
+  );
+};
