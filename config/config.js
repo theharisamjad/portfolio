@@ -60,7 +60,13 @@ export const work = {
     {
       title: "Mobile App Development",
       description:
-        "I create pixel perfect iOS and Andriod apps using React Native/Expo or Xamarin/MAUI.",
+        "I create pixel perfect iOS and Andriod apps using React Native/Expo or Xamarin/.NET MAUI.",
+      icons: null,
+    },
+    {
+      title: "Training & Mentorship",
+      description:
+        "I help people learn code and guide them how to resolve bugs/errors faced during mobile development.",
       icons: null,
     },
   ],

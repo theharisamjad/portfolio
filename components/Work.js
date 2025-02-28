@@ -8,7 +8,7 @@ export const Services = ({ title, cards }) => {
     <div id="services" className="bg-secondary py-5 px-5">
       <div className="container">
         <h1 className="text-primary fw-bold">{title}</h1>
-        <div className="d-flex flex-row flex-wrap justify-content-left">
+        <div className="d-flex flex-row flex-wrap justify-content-center">
           {cards.map((value, index) => (
             <Card
               key={index}
@@ -79,7 +79,7 @@ export const Card = ({ title, description, icons, tags }) => {
     >
       <h4 className="text-primary">{title}</h4>
       <p className="text-dark">{description}</p>
-      <div className="d-flex flex-row flex-wrap justify-content-left mb-2">
+      <div className="d-flex flex-row flex-wrap justify-content-center mb-2">
         {tags?.map((value, index) => (
           <span
             key={index}
@@ -93,7 +93,7 @@ export const Card = ({ title, description, icons, tags }) => {
       <div className="text-end mt-auto">
         {icons &&
           icons.map((value, index) => (
-            <Tooltip text={value.toolTipText} position="bottom">
+            <Tooltip key={index} text={value.toolTipText} position="bottom">
               <Link key={index} href={value.link}>
                 <a target="_blank" rel="noreferrer">
                   <FontAwesomeIcon
