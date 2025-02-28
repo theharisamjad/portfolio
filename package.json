@@ -1,13 +1,13 @@
 {
   "name": "portfolio",
   "description": "A portfolio website template that helps you showcase your work, projects and skills as a software developer or freelancer.",
-  "homepage": "http://hashirshoaeb.com",
+  "homepage": "https://theharisamjad.com",
   "version": "0.2.0",
   "license": "MIT",
   "private": true,
   "author": {
-    "name": "Hashir Shoaib",
-    "email": "hashirshoaeb@gmail.com",
+    "name": "Haris Amjad",
+    "email": "harisamjad0525@gmail.com",
     "url": "https://github.com/hashirshoaeb"
   },
   "scripts": {
