@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.theharisamjad.com
+
+# Sitemaps
+Sitemap: https://www.theharisamjad.com/sitemap.xml
