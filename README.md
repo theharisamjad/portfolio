@@ -1,11 +1,5 @@
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
-  <h1 align="center">Developer's Portfolio ✨</h1>
-
-  <p align="center">
-    It is a personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects.
-</p>
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -75,25 +69,6 @@ Create a new repository with your username as `<your-username>.github.io`. And l
 Your site will be available at `https://<your-username>.github.io`
 
 >Note: You need to replace `<your-username>` with your username. To add CNAME for custom domain, see [scripts/cname.js](https://github.com/hashirshoaeb/portfolio/blob/main/scripts/cname.js)
-
-# Support my work
-
-If you found this project valuable, please consider giving it a ⭐️ on GitHub. Your support keeps me motivated! If you'd like to further support my work, you can buy me a book. Thank you for your generosity!
-
-<div>
-  <a href="https://www.buymeacoffee.com/hashirshoaeb"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a book&emoji=📖&slug=hashirshoaeb&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
- </div>
-
-<!-- CONTRIBUTING -->
-# Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contribution you make would be **appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 
 
