@@ -1,4 +1,7 @@
 import profile from "./profile.png";
+import og_image from "./og_image_haris.png";
+import google_seo_image from "./seo_thumbnail_haris.png";
+import twitter_image from "./twitter_image_haris.png";
 import {
   faAppStore,
   faGithub,
@@ -219,11 +222,15 @@ export const contact = {
 // SEARCH ENGINE
 export const SEO = {
   // 50 - 60 char
-  title:
-    "Haris Amjad | Senior Software Engineer | React Native | Xamarin Developer",
+  name: "Haris Amjad",
+  title: "Senior Software Engineer | React Native | Xamarin Developer",
   description:
-    "I am a software engineer who creates cool and innovative cross platform mobile applications using react native & expo",
+    "Porfolio of Haris Amjad, a software engineer who creates cool and innovative cross platform mobile applications using react native & expo",
   image: profile.src,
+  og_img: og_image.src,
+  seo_img: google_seo_image.src,
+  twitter_img: twitter_image.src,
+  url: "https://theharisamjad.com",
 };
 
 export const links = {
