@@ -29,7 +29,7 @@ export const navigation = {
 };
 export const intro = {
   title: "Hey, I'm Haris",
-  description: "A Software Engineer creating cool mobile apps.",
+  description: "A Software Engineer developing cool mobile applications.",
   image: profile.src,
   buttons: [
     {
@@ -38,7 +38,7 @@ export const intro = {
       isPrimary: true,
     },
     {
-      title: "Resume",
+      title: "View Resume",
       link: "https://docs.google.com/document/d/1vpr6HTMBLcIuFqF2PzaKUOWN_jIo-WIEJA7SM6fETQo/edit?usp=sharing",
       isPrimary: false,
     },
@@ -66,7 +66,7 @@ export const work = {
     {
       title: "Training & Mentorship",
       description:
-        "I help people learn code and guide them how to resolve bugs/errors faced during mobile development.",
+        "I assist people in learning programming and troubleshooting bugs encountered during mobile development.",
       icons: null,
     },
   ],

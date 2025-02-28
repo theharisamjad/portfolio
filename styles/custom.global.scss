@@ -150,3 +150,29 @@ a {
   transform: translate(-0.5rem, -0.5rem);
   box-shadow: 2rem 2rem $primary;
 }
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  padding-bottom: 4px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: $primary;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: $primary!important; /* Changes text color */
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Expands underline only for hovered item */
+}
