@@ -1,5 +1,5 @@
 const ghpages = require("gh-pages");
-const build_path = './out';
+const build_path = "./out";
 
 const args = process.argv.slice(2);
 const username = args[0];
@@ -14,10 +14,9 @@ console.log(`Deploying to ${repoURL} branch ${branch}`);
  * [repoURL] - The URL of the GitHub repository to deploy to
  * [branch] - The branch to deploy to
  * [build_path] - The path to the built site
- * 
+ *
  * node scripts/pages.js <username> <branch>
  * i.e.
- * node scripts/pages.js hashirshoaeb master
  */
 ghpages.publish(
   build_path,

@@ -149,7 +149,7 @@ export const projects = {
         },
         {
           icon: faGithub,
-          link: "https://github.com/haris-0525/WeatherWorld",
+          link: "https://github.com/theharisamjad/WeatherWorld",
           toolTipText: "Github",
         },
       ],
@@ -163,7 +163,7 @@ export const projects = {
       icons: [
         {
           icon: faGithub,
-          link: "https://github.com/haris-0525/TodoApp",
+          link: "https://github.com/theharisamjad/Note-IT",
           toolTipText: "Github",
         },
       ],
@@ -219,9 +219,10 @@ export const contact = {
 // SEARCH ENGINE
 export const SEO = {
   // 50 - 60 char
-  title: "Haris Amjad | Software Engineer | React Native | .NET MAUI developer",
+  title:
+    "Haris Amjad | Senior Software Engineer | React Native | Xamarin Developer",
   description:
-    "I create mobile apps. I did masters from National University of Sciences and Technology (NUST) in 2024 with a degree in Software Engineering.",
+    "I am a software engineer who creates cool and innovative cross platform mobile applications using react native & expo",
   image: profile.src,
 };
 
@@ -236,7 +237,7 @@ export const links = {
     },
     {
       title: "My GitHub",
-      link: "https://github.com/haris-0525",
+      link: "https://github.com/theharisamjad",
     },
     {
       title: "My LinkedIn",

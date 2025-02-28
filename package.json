@@ -8,7 +8,7 @@
   "author": {
     "name": "Haris Amjad",
     "email": "harisamjad0525@gmail.com",
-    "url": "https://github.com/hashirshoaeb"
+    "url": "https://github.com/theharisamjad"
   },
   "scripts": {
     "prebuild": "node scripts/favicons.js",
@@ -17,8 +17,6 @@
     "start": "next start",
     "export": "next export",
     "predeploy": "npm run build && npm run export && touch ./out/.nojekyll",
-    "deploy": "npm run custom-domain && node scripts/pages.js hashirshoaeb master",
-    "custom-domain": "node scripts/cname.js hashirshoaeb.com www.hashirshoaeb.com",
     "lint": "next lint"
   },
   "dependencies": {
