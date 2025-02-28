@@ -37,7 +37,7 @@ function Button({ title, link }) {
     <div className="row justify-content-center">
       <div className="card card-work mx-sm-4 my-2" style={{ width: "20rem" }}>
         <Link href={link}>
-          <a target="_blank" rel="noreferrer">
+          <a target={link === "/" ? "_self" : "_blank"} rel="noreferrer">
             <h4 className="text-primary py-3 px-3">{title}</h4>
           </a>
         </Link>

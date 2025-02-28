@@ -4,7 +4,7 @@ import {
   faGithub,
   faGooglePlay,
 } from "@fortawesome/free-brands-svg-icons";
-import {} from "@fortawesome/free-solid-svg-icons";
+import { faCloudSunRain } from "@fortawesome/free-solid-svg-icons";
 
 export const navigation = {
   name: "Haris",
@@ -39,7 +39,7 @@ export const intro = {
     },
     {
       title: "Resume",
-      link: "/Resume-Haris-Amjad.pdf",
+      link: "https://docs.google.com/document/d/1vpr6HTMBLcIuFqF2PzaKUOWN_jIo-WIEJA7SM6fETQo/edit?usp=sharing",
       isPrimary: false,
     },
   ],
@@ -78,10 +78,12 @@ export const projects = {
         {
           icon: faAppStore,
           link: "https://apps.apple.com/us/app/fasset-buy-digital-assets/id1599893605",
+          toolTipText: "App Store",
         },
         {
           icon: faGooglePlay,
           link: "https://play.google.com/store/apps/details?id=com.fasset.cashapp",
+          toolTipText: "Google Play Store",
         },
       ],
     },
@@ -94,10 +96,12 @@ export const projects = {
         {
           icon: faAppStore,
           link: "https://apps.apple.com/pk/app/graana-real-estate-portal/id1438849353",
+          toolTipText: "App Store",
         },
         {
           icon: faGooglePlay,
           link: "https://play.google.com/store/apps/details?id=com.graanaapp&hl=en&pli=1",
+          toolTipText: "Google Play Store",
         },
       ],
     },
@@ -108,8 +112,14 @@ export const projects = {
       tags: ["JavaScript", "React Native", "React-navigation", "Axios"],
       icons: [
         {
+          icon: faAppStore,
+          link: "https://apps.apple.com/app/worksapp-graana/id6499518397",
+          toolTipText: "App Store",
+        },
+        {
           icon: faGooglePlay,
           link: "https://play.google.com/store/apps/details?id=com.graana.worksapp&hl=en",
+          toolTipText: "Google Play Store",
         },
       ],
     },
@@ -127,8 +137,14 @@ export const projects = {
       ],
       icons: [
         {
+          icon: faCloudSunRain,
+          link: "https://appetize.io/app/b_54wt3owegydw4jszwrdx5up22i",
+          toolTipText: "Demo",
+        },
+        {
           icon: faGithub,
           link: "https://github.com/haris-0525/WeatherWorld",
+          toolTipText: "Github",
         },
       ],
     },
@@ -142,6 +158,7 @@ export const projects = {
         {
           icon: faGithub,
           link: "https://github.com/haris-0525/TodoApp",
+          toolTipText: "Github",
         },
       ],
     },
@@ -153,29 +170,31 @@ export const skills = [
   "TypeScript",
   "C#",
   "Java",
+  "Swift",
   "HTML",
   "CSS",
   "React",
   "React Native",
+  "Redux",
+  "Zustand",
   "Expo",
+  "Firebase",
   "Xamarin",
   ".NET MAUI",
   "Android",
   "iOS",
-  "Redux",
-  "Zustand",
-  "Jest",
-  "AWS",
-  "React Query",
-  "Firebase",
-  "Github",
-  "Bolt",
   "SQL",
   "MongoDB",
-  "Node.js",
-  "Express.js",
+  "Realm",
+  "SQLite",
+  "Node JS",
+  "Express JS",
+  "Github",
+  "Figma",
+  "Jira",
   "Xcode",
   "Android Studio",
+  "EAS",
 ];
 
 export const contact = {
@@ -207,7 +226,7 @@ export const links = {
   cards: [
     {
       title: "My website",
-      link: "https://portfolio-haris-0525s-projects.vercel.app/",
+      link: "/",
     },
     {
       title: "My GitHub",

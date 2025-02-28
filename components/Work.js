@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import Tooltip from "../components/Tooltip";
 
 export const Services = ({ title, cards }) => {
   return (
@@ -78,29 +79,31 @@ export const Card = ({ title, description, icons, tags }) => {
     >
       <h4 className="text-primary">{title}</h4>
       <p className="text-dark">{description}</p>
-      <div className="d-flex flex-row flex-wrap justify-content-center mb-2">
+      <div className="d-flex flex-row flex-wrap justify-content-left mb-2">
         {tags?.map((value, index) => (
           <span
             key={index}
-            className={`badge bg-primary me-3 mb-2 mt-2 p-1.5`} // Added p-2 for padding
+            className={`badge bg-primary me-3 mb-1 mt-2 p-1.5`} // Added p-2 for padding
             style={{ fontSize: "1.0rem" }} // Increased font size
           >
             {value}
           </span>
         ))}
       </div>
-      <div className="text-end">
+      <div className="text-end mt-auto">
         {icons &&
           icons.map((value, index) => (
-            <Link key={index} href={value.link}>
-              <a target="_blank" rel="noreferrer">
-                <FontAwesomeIcon
-                  className="icon-style mx-1"
-                  icon={value.icon}
-                  size="2x"
-                />
-              </a>
-            </Link>
+            <Tooltip text={value.toolTipText} position="bottom">
+              <Link key={index} href={value.link}>
+                <a target="_blank" rel="noreferrer">
+                  <FontAwesomeIcon
+                    className="icon-style mx-1"
+                    icon={value.icon}
+                    size="2x"
+                  />
+                </a>
+              </Link>
+            </Tooltip>
           ))}
       </div>
     </div>
