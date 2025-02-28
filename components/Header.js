@@ -5,7 +5,8 @@ export const Header = ({ seo }) => {
     "@context": "https://schema.org",
     "@type": "Person",
     name: `${seo.name}`,
-    jobTitle: `${seo.title}`,
+    jobTitle:
+      "Senior Software Engineer, Mobile Application Developer, React Native Developer",
     image: `${seo.seo_img}`,
     url: `${seo.url}`,
     sameAs: [
@@ -22,7 +23,7 @@ export const Header = ({ seo }) => {
       sameAs: "https://nust.edu.pk",
     },
     knowsAbout: [
-      "Mobile Application Devlopement",
+      "Mobile Application Devlopment",
       "React Native",
       "Expo",
       "Xamarin",

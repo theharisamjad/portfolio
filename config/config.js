@@ -223,7 +223,8 @@ export const contact = {
 export const SEO = {
   // 50 - 60 char
   name: "Haris Amjad",
-  title: "Senior Software Engineer | React Native | Xamarin Developer",
+  title:
+    "Senior Software Engineer | Mobile Application Developer | React Native",
   description:
     "Porfolio of Haris Amjad, a software engineer who creates cool and innovative cross platform mobile applications using react native & expo",
   image: profile.src,
@@ -236,7 +237,8 @@ export const SEO = {
 export const links = {
   image: profile.src,
   title: "@harisamjad",
-  description: "Senior Software Engineer | React Native | Xamarin Developer",
+  description:
+    "Senior Software Engineer | Mobile Application Developer | React Native | Xamarin",
   cards: [
     {
       title: "My website",
