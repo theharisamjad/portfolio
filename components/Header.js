@@ -3,7 +3,7 @@ import Head from "next/head";
 export const Header = ({ seo }) => {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Person",
+    "@type": "WebSite",
     name: "Haris Amjad",
     jobTitle:
       "Senior Software Engineer, Mobile Application Developer, React Native Developer",
