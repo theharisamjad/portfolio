@@ -1,15 +1,15 @@
 import Head from "next/head";
 
 export const Header = ({ seo }) => {
-  const schemaMarkup = {
+  const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: `${seo.name}`,
+    name: "Haris Amjad",
     jobTitle:
       "Senior Software Engineer, Mobile Application Developer, React Native Developer",
     image:
       "https://theharisamjad.com/_next/static/media/seo_thumbnail_haris.6074cb24.png",
-    url: `${seo.url}`,
+    url: "https://theharisamjad.com",
     sameAs: [
       "https://github.com/theharisamjad",
       "https://www.linkedin.com/in/haris-amjad-71b5a3117",
@@ -24,7 +24,7 @@ export const Header = ({ seo }) => {
       sameAs: "https://nust.edu.pk",
     },
     knowsAbout: [
-      "Mobile Application Devlopment",
+      "Mobile Application Development",
       "React Native",
       "Expo",
       "Xamarin",
@@ -33,7 +33,8 @@ export const Header = ({ seo }) => {
       "Android",
       "iOS",
     ],
-    description: `${seo.description}`,
+    description:
+      "Portfolio of Haris Amjad, a software engineer who creates cool and innovative cross-platform mobile applications using React Native & Expo.",
   };
   return (
     <Head>
@@ -41,8 +42,9 @@ export const Header = ({ seo }) => {
       <meta name="description" content={seo.description} />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+
       <meta
         name="keywords"
         content="Mobile Applications,React Native,Expo,Xamarin,JavaScript,TypeScript"
