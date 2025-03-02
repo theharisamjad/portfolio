@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Nav } from "../components/Navbar";
+import { Analytics } from "@vercel/analytics/next";
 import { Intro, About } from "../components/Intro";
 import { Services, Projects, Skills } from "../components/Work";
 import { Footer, Contact } from "../components/Footer";
@@ -20,6 +21,7 @@ export default function Home() {
     <Fragment>
       <Header seo={SEO} />
       <Nav title={navigation.name} links={navigation.links} />
+      <Analytics />
       <Intro
         title={intro.title}
         description={intro.description}

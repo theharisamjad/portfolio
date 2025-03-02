@@ -36,10 +36,13 @@ function Button({ title, link }) {
   return (
     <div className="row justify-content-center">
       <div className="card card-work mx-sm-4 my-2" style={{ width: "20rem" }}>
-        <Link href={link}>
-          <a target={link === "/" ? "_self" : "_blank"} rel="noreferrer">
-            <h4 className="text-primary py-3 px-3">{title}</h4>
-          </a>
+        <Link
+          className="text-primary py-3 px-3"
+          target={link === "/" ? "_self" : "_blank"}
+          rel="noreferrer"
+          href={link}
+        >
+          <h4 className="text-primary py-3 px-3">{title}</h4>
         </Link>
       </div>
     </div>

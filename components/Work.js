@@ -94,14 +94,17 @@ export const Card = ({ title, description, icons, tags }) => {
         {icons &&
           icons.map((value, index) => (
             <Tooltip key={index} text={value.toolTipText} position="bottom">
-              <Link key={index} href={value.link}>
-                <a target="_blank" rel="noreferrer">
-                  <FontAwesomeIcon
-                    className="icon-style mx-1"
-                    icon={value.icon}
-                    size="2x"
-                  />
-                </a>
+              <Link
+                target="_blank"
+                rel="noreferrer"
+                key={index}
+                href={value.link}
+              >
+                <FontAwesomeIcon
+                  className="icon-style mx-1"
+                  icon={value.icon}
+                  size="2x"
+                />
               </Link>
             </Tooltip>
           ))}

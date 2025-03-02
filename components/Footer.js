@@ -11,14 +11,16 @@ export const Contact = ({ title, description, buttons }) => {
           <div className="">
             {buttons.map((value, index) =>
               value.isPrimary ? (
-                <Link key={index} href={value.link}>
-                  <a className="btn btn-primary">{value.title}</a>
+                <Link className="btn btn-primary" key={index} href={value.link}>
+                  {value.title}
                 </Link>
               ) : (
-                <Link key={index} href={value.link}>
-                  <a className="btn btn-outline-primary my-1 mx-3">
-                    {value.title}
-                  </a>
+                <Link
+                  className="btn btn-outline-primary my-1 mx-3"
+                  key={index}
+                  href={value.link}
+                >
+                  {value.title}
                 </Link>
               )
             )}
@@ -35,8 +37,8 @@ export const Footer = () => {
       <div className="container text-muted">
         <small>
           &copy; 2025{" "}
-          <Link href="https://github.com/theharisamjad">
-            <a>harisamjad</a>
+          <Link target="_blank" href="https://github.com/theharisamjad">
+            harisamjad
           </Link>
         </small>
       </div>
