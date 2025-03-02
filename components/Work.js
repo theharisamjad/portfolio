@@ -5,9 +5,9 @@ import Tooltip from "../components/Tooltip";
 
 export const Services = ({ title, cards }) => {
   return (
-    <div id="services" className="bg-secondary py-5 px-5">
+    <div id="services" className="bg-primary py-5 px-5">
       <div className="container">
-        <h1 className="text-primary fw-bold">{title}</h1>
+        <h1 className="text-secondary fw-bold">{title}</h1>
         <div className="d-flex flex-row flex-wrap justify-content-center">
           {cards.map((value, index) => (
             <Card
@@ -49,7 +49,13 @@ export const Skills = ({ skills, color = "primary" }) => {
 
 export const Projects = ({ title, cards }) => {
   return (
-    <div id="projects" className="bg-primary py-5 px-5">
+    <div
+      id="projects"
+      className="py-5 px-5"
+      style={{
+        background: "linear-gradient(135deg, #0A192F 50%, #0E4A47)",
+      }}
+    >
       <div className="container">
         <h1 className="text-light fw-bold">Projects</h1>
         <div className="d-flex flex-row flex-wrap justify-content-center">

@@ -1,41 +1,51 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export const Nav = ({ title, links }) => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
-
-  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+  const router = useRouter();
 
   return (
-    <nav className="navbar navbar-expand-sm navbar-light bg-secondary">
+    <nav className="navbar navbar-expand-sm bg-dark border-0">
       <div className="container">
-        <Link className="navbar-brand" href="/">
-          <span className="">{title}</span>
-        </Link>
+        {/* Toggle Button */}
         <button
-          className="custom-toggler navbar-toggler"
+          className="navbar-toggler border-0 shadow-none fs-2"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarsExample09"
-          aria-controls="navbarsExample09"
-          aria-expanded={!isNavCollapsed ? true : false}
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded={!isNavCollapsed}
           aria-label="Toggle navigation"
-          onClick={handleNavCollapse}
+          onClick={() => setIsNavCollapsed(!isNavCollapsed)}
         >
-          <span className="navbar-toggler-icon"></span>
+          {isNavCollapsed ? "☰" : "✖"}
         </button>
 
+        {/* Navigation Links */}
         <div
-          className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
-          id="navbarsExample09"
+          className={`collapse navbar-collapse ${isNavCollapsed ? "" : "show"}`}
+          id="navbarNav"
         >
-          <div className="navbar-nav">
+          <ul className="navbar-nav ms-auto">
             {links.map((value, index) => (
-              <Link className="nav-link" key={index} href={value.link}>
-                {value.title}
-              </Link>
+              <li key={index} className="nav-item">
+                <Link
+                  className={`nav-link text-white ${
+                    router.pathname === value.link
+                      ? "border-bottom border-white fw-bold"
+                      : ""
+                  }`}
+                  key={index}
+                  href={value.link}
+                  onClick={() => setIsNavCollapsed(true)} // Close on click
+                >
+                  {value.title}
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </div>
     </nav>

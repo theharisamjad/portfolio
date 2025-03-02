@@ -143,36 +143,59 @@ a {
 .card-image {
   transition: all .3s;
   border-radius: $card-border-radius;
-  box-shadow: 1rem 1rem $primary;
+  box-shadow: 1rem 1rem $secondary;
 }
 
 .card-image:hover {
   transform: translate(-0.5rem, -0.5rem);
-  box-shadow: 2rem 2rem $primary;
+  box-shadow: 2rem 2rem $secondary;
 }
 
+.navbar {
+  background: #FFFFFF !important; /* Keeps original secondary color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Move Nav Links to the Right */
+.navbar-nav {
+  margin-left: auto;
+}
+
+/* Styling Nav Links */
 .nav-link {
-  position: relative;
-  text-decoration: none;
-  padding-bottom: 4px;
+  color: #0A192F !important;
+  font-size: 16px;
+  padding: 10px 15px;
   transition: color 0.3s ease-in-out;
 }
 
-.nav-link::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: $primary;
-  transition: width 0.3s ease-in-out;
-}
-
+/* Hover Effect */
 .nav-link:hover {
-  color: $primary!important; /* Changes text color */
+  color: #d8bc6b !important; /* Slightly lighter on hover */
 }
 
-.nav-link:hover::after {
-  width: 100%; /* Expands underline only for hovered item */
+/* Active Link Highlight */
+.nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid;
+}
+
+// /* Navbar Toggle Button */
+// .custom-toggler {
+//   background: transparent;
+//   border: none;
+//   font-size: 24px;
+//   color: white;
+//   transition: transform 0.3s ease;
+// }
+
+/* Toggle Button Hover Effect */
+.custom-toggler:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+/* Smooth Collapse Animation */
+.navbar-collapse {
+  transition: height 0.3s ease-in-out;
 }

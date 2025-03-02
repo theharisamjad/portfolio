@@ -6,17 +6,29 @@ const { publicRuntimeConfig } = getConfig();
 
 export const Intro = ({ title, description, image, buttons }) => {
   return (
-    <div className="bg-secondary py-5 px-5">
+    <div className="bg-primary py-5 px-5 min-vh-100 d-flex align-items-center">
       <div className="container">
-        <div className=" row align-items-center">
-          <div className="col-sm-6">
-            <h1 className="text-primary fw-bold display-3">{title}</h1>
-            <p>{description}</p>
+        <div className="row align-items-center text-center text-sm-start">
+          {/* Image Section - Move Below on Small Screens */}
+          <div className="col-12 col-sm-6 order-1 order-sm-2 text-center mb-4 mb-sm-0">
+            <img
+              className="img-fluid card-image"
+              width="250"
+              height="250"
+              src={image}
+              alt="profile of harisamjad"
+            />
+          </div>
+
+          {/* Content Section - Stays Above on Small Screens */}
+          <div className="col-12 col-sm-6 order-2 order-sm-1">
+            <h1 className="text-secondary fw-bold display-3">{title}</h1>
+            <p className="text-secondary">{description}</p>
             <div className="text-center">
               {buttons.map((value, index) =>
                 value.isPrimary ? (
                   <Link
-                    className="btn btn-primary my-1 mx-3"
+                    className="btn btn-secondary my-1 mx-3"
                     key={index}
                     href={value.link}
                   >
@@ -26,7 +38,7 @@ export const Intro = ({ title, description, image, buttons }) => {
                   <Link
                     target="_blank"
                     rel="noreferrer"
-                    className="btn btn-outline-primary my-1 mx-3"
+                    className="btn btn-outline-secondary my-1 mx-3"
                     key={index}
                     href={value.link}
                   >
@@ -35,15 +47,6 @@ export const Intro = ({ title, description, image, buttons }) => {
                 )
               )}
             </div>
-          </div>
-          <div className="col-sm-6 text-center">
-            <img
-              className="img-fluid my-3 card-image"
-              width="250"
-              height="250"
-              src={image}
-              alt="profile of harisamjad"
-            />
           </div>
         </div>
       </div>
