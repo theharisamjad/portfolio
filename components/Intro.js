@@ -6,18 +6,22 @@ const { publicRuntimeConfig } = getConfig();
 
 export const Intro = ({ title, description, image, buttons }) => {
   return (
-    <div className="bg-primary min-vh-100 d-flex align-items-center py-5 px-5">
+    <div className="bg-primary min-vh-100 d-flex align-items-center py-5 px-4 px-md-5">
       <div className="container">
-        <div className="row align-items-center text-center text-md-start">
-          {/* Text Content - Stays Left on Desktop, Moves Above Image on Mobile */}
-          <div className="col-12 col-md-6">
-            <h1 className="text-secondary fw-bold display-3">{title}</h1>
-            <p className="text-secondary">{description}</p>
-            <div className="text-center text-md-start">
+        <div className="row align-items-center text-center text-md-start g-5">
+          {" "}
+          <div className="col-12 col-md-6 mb-2 mb-md-0 px-3">
+            {" "}
+            <h1 className="text-secondary fw-bold display-3 mb-4">
+              {title}
+            </h1>{" "}
+            <p className="text-secondary mb-4">{description}</p>{" "}
+            <div className="d-flex flex-wrap justify-content-center justify-content-md-start gap-4">
+              {" "}
               {buttons.map((value, index) =>
                 value.isPrimary ? (
                   <Link
-                    className="btn btn-secondary my-1 mx-3"
+                    className="btn btn-secondary px-4 py-2"
                     key={index}
                     href={value.link}
                   >
@@ -27,7 +31,7 @@ export const Intro = ({ title, description, image, buttons }) => {
                   <Link
                     target="_blank"
                     rel="noreferrer"
-                    className="btn btn-outline-secondary my-1 mx-3"
+                    className="btn btn-outline-secondary px-4 py-2"
                     key={index}
                     href={value.link}
                   >
@@ -37,11 +41,10 @@ export const Intro = ({ title, description, image, buttons }) => {
               )}
             </div>
           </div>
-
-          {/* Image - Stays Right on Desktop, Moves Below on Mobile */}
-          <div className="col-12 col-md-6 text-center text-md-end">
+          <div className="col-12 col-md-6 text-center text-md-end px-3">
+            {" "}
             <img
-              className="img-fluid my-3 card-image"
+              className="img-fluid my-4 my-md-0 card-image"
               width="250"
               height="250"
               src={image}

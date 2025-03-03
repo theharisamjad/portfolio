@@ -32,7 +32,8 @@ export const navigation = {
 };
 export const intro = {
   title: "Hey, I'm Haris",
-  description: "A Software Engineer developing cool mobile applications.",
+  description:
+    "A Senior Software Engineer with over seven years of experience in fintech and real estate. I specialize in building mobile applications using React Native, Expo, and Xamarin/.NET MAUI, focusing on creating intuitive and scalable solutions. I aim to deliver high-performance applications and improve user experiences.",
   image: profile.src,
   buttons: [
     {
@@ -51,7 +52,7 @@ export const intro = {
 export const about = {
   title: "Who I am",
   description: [
-    "I'm a software engineer who started his career in 2018 as junior application developer, after spending more than 7 years in the industry, I now specialize in cross-platform mobile development with Meta's React Native, i love to create user-centric applications that are picture perfect and easy to use.",
+    "I'm a software engineer who started his career in 2018 as junior application developer, after spending several years in the industry, I now specialize in cross-platform mobile development with Meta's React Native, i love to create user-centric applications that are picture perfect and easy to use.",
     "The tech industry is ever-evolving and I love being able to grow with it, while continually solidifying the fundamentals. Personally i like to build side projects that I opensource from a place of empathy - for future developers, and users..",
     "When I’m not programming, I focus on my hobbies which are: playing football, video games, meeting people and growing my network.",
   ],
