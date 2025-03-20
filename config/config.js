@@ -210,11 +210,11 @@ export const skills = [
 export const contact = {
   title: "Get in touch",
   description:
-    "Please do not hesitate to reach out directly by email at harisamjad0525@gmail.com or drop a text at +923336610199",
+    "Please do not hesitate to reach out directly by email at info@theharisamjad.com or drop a text at +923336610199",
   buttons: [
     {
       title: "Email Me",
-      link: "mailto:harisamjad0525@gmail.com",
+      link: "mailto:info@theharisamjad.com",
       isPrimary: true,
     },
   ],
