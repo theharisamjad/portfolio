@@ -251,7 +251,7 @@ export const links = {
     },
     {
       title: "My LinkedIn",
-      link: "https://www.linkedin.com/in/haris-amjad-71b5a3117/",
+      link: "https://www.linkedin.com/in/theharisamjad/",
     },
   ],
 };

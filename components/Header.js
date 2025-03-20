@@ -12,7 +12,7 @@ export const Header = ({ seo }) => {
     url: "https://theharisamjad.com",
     sameAs: [
       "https://github.com/theharisamjad",
-      "https://www.linkedin.com/in/haris-amjad-71b5a3117",
+      "https://www.linkedin.com/in/theharisamjad/",
     ],
     worksFor: {
       "@type": "Organization",
