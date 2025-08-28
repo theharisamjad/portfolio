@@ -33,7 +33,7 @@ export const navigation = {
 export const intro = {
   title: "Hey, I'm Haris",
   description:
-    "A Senior Software Engineer with over seven years of experience in fintech and real estate. I specialize in building mobile applications using React Native, Expo, and Xamarin/.NET MAUI, focusing on creating intuitive and scalable solutions. I aim to deliver high-performance applications and improve user experiences.",
+    "A Senior Software Engineer with over eight years of experience in fintech, ecommerce and real estate. I specialize in building mobile applications using React Native, Expo, and Xamarin/.NET MAUI, focusing on creating intuitive and scalable solutions. I aim to deliver high-performance applications and improve user experiences.",
   image: profile.src,
   buttons: [
     {
@@ -79,6 +79,36 @@ export const work = {
 export const projects = {
   title: "Projects",
   cards: [
+    {
+      title: "ECM Mobile App",
+      description:
+        "A document scanning application built using React Native/Expo. The primary objective was to develop an application that enables users to scan and digitize physical documents directly into their secure ECM Central portal.",
+      tags: [
+        "React Native",
+        "Expo",
+        "Typescript",
+        "Redux",
+        "Stripe",
+        "Apple Pay",
+        "VSCode",
+        "Android Studio",
+        "Xcode",
+        "Github",
+        "Cursor AI",
+      ],
+      icons: [
+        {
+          icon: faAppStore,
+          link: "https://apps.apple.com/us/app/ecm-central/id6746174660?platform=iphone",
+          toolTipText: "App Store",
+        },
+        {
+          icon: faGooglePlay,
+          link: "https://play.google.com/store/apps/details?id=com.ecmcentral.ecmmobile&hl=en",
+          toolTipText: "Google Play Store",
+        },
+      ],
+    },
     {
       title: "Fasset Mobile App",
       description:
@@ -154,20 +184,6 @@ export const projects = {
         {
           icon: faGithub,
           link: "https://github.com/theharisamjad/WeatherWorld",
-          toolTipText: "Github",
-        },
-      ],
-    },
-
-    {
-      title: "Note IT",
-      description:
-        "A Note application developed in React Native/Expo which users can use to jolt down their notes and day-to-day tasks.",
-      tags: ["TypeScript", "Expo", "Zustand", "Async-storage", "Eas"],
-      icons: [
-        {
-          icon: faGithub,
-          link: "https://github.com/theharisamjad/Note-IT",
           toolTipText: "Github",
         },
       ],
